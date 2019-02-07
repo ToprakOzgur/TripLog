@@ -8,13 +8,14 @@
 
 import UIKit
 
-class TripsViewController: UIViewController, UITableViewDataSource {
+class TripsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        tableView.delegate = self
         
         TripFunctions.readTrips { [weak self] in
             self?.tableView.reloadData()
@@ -26,13 +27,15 @@ class TripsViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         
-        if cell == nil{
-         cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
-        }
-        cell!.textLabel?.text = Data.TripModels[indexPath.row].title
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TripsTableViewCell
         
-        return cell!
+        cell.setup(tripModel: Data.TripModels[indexPath.row])
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 160
     }
 }
