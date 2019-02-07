@@ -14,6 +14,9 @@
 		CA48E430220C58BD007E015C /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA48E42F220C58BD007E015C /* TripsViewController.swift */; };
 		CA48E432220C837D007E015C /* TripsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA48E431220C837D007E015C /* TripsTableViewCell.swift */; };
 		CA48E435220C8E1D007E015C /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA48E434220C8E1D007E015C /* UIViewExtensions.swift */; };
+		CA48E438220CC7F6007E015C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA48E437220CC7F6007E015C /* Theme.swift */; };
+		CA48E43A220CC924007E015C /* FugazOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA48E439220CC924007E015C /* FugazOne-Regular.ttf */; };
+		CA48E43C220CCCEA007E015C /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA48E43B220CCCEA007E015C /* Colors.xcassets */; };
 		CAF67D932208C6AA0029B49F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF67D922208C6AA0029B49F /* AppDelegate.swift */; };
 		CAF67D9A2208C6AB0029B49F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAF67D992208C6AB0029B49F /* Assets.xcassets */; };
 		CAF67D9D2208C6AB0029B49F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAF67D9B2208C6AB0029B49F /* LaunchScreen.storyboard */; };
@@ -27,6 +30,9 @@
 		CA48E42F220C58BD007E015C /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
 		CA48E431220C837D007E015C /* TripsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsTableViewCell.swift; sourceTree = "<group>"; };
 		CA48E434220C8E1D007E015C /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		CA48E437220CC7F6007E015C /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		CA48E439220CC924007E015C /* FugazOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FugazOne-Regular.ttf"; sourceTree = "<group>"; };
+		CA48E43B220CCCEA007E015C /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		CAF67D8F2208C6AA0029B49F /* TripLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAF67D922208C6AA0029B49F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAF67D992208C6AB0029B49F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,6 +95,16 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		CA48E436220CC7D4007E015C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CA48E439220CC924007E015C /* FugazOne-Regular.ttf */,
+				CA48E437220CC7F6007E015C /* Theme.swift */,
+				CA48E43B220CCCEA007E015C /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		CAF67D862208C6AA0029B49F = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +124,7 @@
 		CAF67D912208C6AA0029B49F /* TripLog */ = {
 			isa = PBXGroup;
 			children = (
+				CA48E436220CC7D4007E015C /* Resources */,
 				CA48E433220C8DCE007E015C /* Extensions */,
 				CA48E423220C4C91007E015C /* Model */,
 				CA48E42B220C5810007E015C /* Views */,
@@ -177,8 +194,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA48E43C220CCCEA007E015C /* Colors.xcassets in Resources */,
 				CAF67D9D2208C6AB0029B49F /* LaunchScreen.storyboard in Resources */,
 				CA48E42E220C5884007E015C /* TripsViewController.storyboard in Resources */,
+				CA48E43A220CC924007E015C /* FugazOne-Regular.ttf in Resources */,
 				CAF67D9A2208C6AB0029B49F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA48E432220C837D007E015C /* TripsTableViewCell.swift in Sources */,
+				CA48E438220CC7F6007E015C /* Theme.swift in Sources */,
 				CA48E435220C8E1D007E015C /* UIViewExtensions.swift in Sources */,
 				CA48E426220C4CD4007E015C /* TripModel.swift in Sources */,
 				CAF67D932208C6AA0029B49F /* AppDelegate.swift in Sources */,
