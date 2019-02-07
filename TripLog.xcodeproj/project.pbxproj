@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA48E426220C4CD4007E015C /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA48E425220C4CD4007E015C /* TripModel.swift */; };
+		CA48E428220C4CED007E015C /* TripFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA48E427220C4CED007E015C /* TripFunctions.swift */; };
 		CAF67D932208C6AA0029B49F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF67D922208C6AA0029B49F /* AppDelegate.swift */; };
 		CAF67D9A2208C6AB0029B49F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAF67D992208C6AB0029B49F /* Assets.xcassets */; };
 		CAF67D9D2208C6AB0029B49F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAF67D9B2208C6AB0029B49F /* LaunchScreen.storyboard */; };
-		CAF67DA52208D1290029B49F /* deneme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF67DA42208D1290029B49F /* deneme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA48E425220C4CD4007E015C /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
+		CA48E427220C4CED007E015C /* TripFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripFunctions.swift; sourceTree = "<group>"; };
 		CAF67D8F2208C6AA0029B49F /* TripLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAF67D922208C6AA0029B49F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAF67D992208C6AB0029B49F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAF67D9C2208C6AB0029B49F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAF67D9E2208C6AB0029B49F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CAF67DA42208D1290029B49F /* deneme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deneme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA48E423220C4C91007E015C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA48E424220C4CAB007E015C /* Trip */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA48E424220C4CAB007E015C /* Trip */ = {
+			isa = PBXGroup;
+			children = (
+				CA48E425220C4CD4007E015C /* TripModel.swift */,
+				CA48E427220C4CED007E015C /* TripFunctions.swift */,
+			);
+			path = Trip;
+			sourceTree = "<group>";
+		};
 		CAF67D862208C6AA0029B49F = {
 			isa = PBXGroup;
 			children = (
@@ -52,11 +71,11 @@
 		CAF67D912208C6AA0029B49F /* TripLog */ = {
 			isa = PBXGroup;
 			children = (
+				CA48E423220C4C91007E015C /* Model */,
 				CAF67D922208C6AA0029B49F /* AppDelegate.swift */,
 				CAF67D992208C6AB0029B49F /* Assets.xcassets */,
 				CAF67D9B2208C6AB0029B49F /* LaunchScreen.storyboard */,
 				CAF67D9E2208C6AB0029B49F /* Info.plist */,
-				CAF67DA42208D1290029B49F /* deneme.swift */,
 			);
 			path = TripLog;
 			sourceTree = "<group>";
@@ -131,8 +150,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA48E426220C4CD4007E015C /* TripModel.swift in Sources */,
 				CAF67D932208C6AA0029B49F /* AppDelegate.swift in Sources */,
-				CAF67DA52208D1290029B49F /* deneme.swift in Sources */,
+				CA48E428220C4CED007E015C /* TripFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
