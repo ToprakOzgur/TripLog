@@ -19,6 +19,8 @@
 		CAAE3262221A00580032447A /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAE3261221A00580032447A /* UIButtonExtension.swift */; };
 		CAAE3264221A073C0032447A /* AddTripViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAAE3263221A073C0032447A /* AddTripViewController.storyboard */; };
 		CAAE3267221A07940032447A /* AddTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAE3266221A07940032447A /* AddTripViewController.swift */; };
+		CAAE326A221A0CD50032447A /* PopopUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAE3269221A0CD50032447A /* PopopUIView.swift */; };
+		CAAE326C221A0EE00032447A /* AppUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAE326B221A0EE00032447A /* AppUIButton.swift */; };
 		CAF1D5A222103AD900E0E9AC /* FugazOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CAF1D5A122103AD900E0E9AC /* FugazOne-Regular.ttf */; };
 		CAF67D932208C6AA0029B49F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF67D922208C6AA0029B49F /* AppDelegate.swift */; };
 		CAF67D9A2208C6AB0029B49F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAF67D992208C6AB0029B49F /* Assets.xcassets */; };
@@ -38,6 +40,8 @@
 		CAAE3261221A00580032447A /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		CAAE3263221A073C0032447A /* AddTripViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddTripViewController.storyboard; sourceTree = "<group>"; };
 		CAAE3266221A07940032447A /* AddTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTripViewController.swift; sourceTree = "<group>"; };
+		CAAE3269221A0CD50032447A /* PopopUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopopUIView.swift; sourceTree = "<group>"; };
+		CAAE326B221A0EE00032447A /* AppUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUIButton.swift; sourceTree = "<group>"; };
 		CAF1D5A122103AD900E0E9AC /* FugazOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FugazOne-Regular.ttf"; sourceTree = "<group>"; };
 		CAF67D8F2208C6AA0029B49F /* TripLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAF67D922208C6AA0029B49F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 		CA48E436220CC7D4007E015C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CAAE3268221A0CB40032447A /* CustomControls */,
+				CA48E433220C8DCE007E015C /* Extensions */,
 				CAF1D5A122103AD900E0E9AC /* FugazOne-Regular.ttf */,
 				CA48E437220CC7F6007E015C /* Theme.swift */,
 				CA48E43B220CCCEA007E015C /* Colors.xcassets */,
@@ -120,6 +126,15 @@
 				CAAE3266221A07940032447A /* AddTripViewController.swift */,
 			);
 			path = AddTripViewController;
+			sourceTree = "<group>";
+		};
+		CAAE3268221A0CB40032447A /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+				CAAE3269221A0CD50032447A /* PopopUIView.swift */,
+				CAAE326B221A0EE00032447A /* AppUIButton.swift */,
+			);
+			path = CustomControls;
 			sourceTree = "<group>";
 		};
 		CAF67D862208C6AA0029B49F = {
@@ -142,7 +157,6 @@
 			isa = PBXGroup;
 			children = (
 				CA48E436220CC7D4007E015C /* Resources */,
-				CA48E433220C8DCE007E015C /* Extensions */,
 				CA48E423220C4C91007E015C /* Model */,
 				CA48E42B220C5810007E015C /* Views */,
 				CAF67D922208C6AA0029B49F /* AppDelegate.swift */,
@@ -231,8 +245,10 @@
 				CA48E438220CC7F6007E015C /* Theme.swift in Sources */,
 				CA48E435220C8E1D007E015C /* UIViewExtensions.swift in Sources */,
 				CA48E426220C4CD4007E015C /* TripModel.swift in Sources */,
+				CAAE326A221A0CD50032447A /* PopopUIView.swift in Sources */,
 				CAF67D932208C6AA0029B49F /* AppDelegate.swift in Sources */,
 				CAAE3267221A07940032447A /* AddTripViewController.swift in Sources */,
+				CAAE326C221A0EE00032447A /* AppUIButton.swift in Sources */,
 				CAAE3262221A00580032447A /* UIButtonExtension.swift in Sources */,
 				CA48E428220C4CED007E015C /* TripFunctions.swift in Sources */,
 				CA48E42A220C4F8B007E015C /* Data.swift in Sources */,
