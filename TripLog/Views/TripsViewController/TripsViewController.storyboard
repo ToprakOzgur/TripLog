@@ -58,7 +58,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <state key="normal" image="add-plus-button"/>
                                 <connections>
-                                    <segue destination="8r5-el-Flx" kind="presentation" id="HYJ-QP-bFK"/>
+                                    <segue destination="8r5-el-Flx" kind="presentation" identifier="toAddTripSegue" id="HYJ-QP-bFK"/>
                                 </connections>
                             </button>
                         </subviews>
